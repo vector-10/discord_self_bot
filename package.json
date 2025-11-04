@@ -1,0 +1,26 @@
+{
+  "name": "discord_self_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vector-10/discord_self_bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vector-10/discord_self_bot/issues"
+  },
+  "homepage": "https://github.com/vector-10/discord_self_bot#readme",
+  "dependencies": {
+    "discord.js": "^14.24.2",
+    "discord.js-selfbot-v13": "^3.7.1",
+    "dotenv": "^17.2.3"
+  }
+}
