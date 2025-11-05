@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/vector-10/discord_self_bot#readme",
   "dependencies": {
+    "debug": "^4.4.3",
     "discord.js": "^14.24.2",
     "discord.js-selfbot-v13": "^3.7.1",
     "dotenv": "^17.2.3"
