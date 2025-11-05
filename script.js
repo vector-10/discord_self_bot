@@ -40,10 +40,10 @@ const initializeBot = ({ botToken, recipientUserId, userToken, email }) => {
 
   client.on("guildMemberAdd", async (member) => {
     try {
-      const welcomeMessage = `${member.user.tag} has joined your server ${member.guild.name}`;
-      const user = await botClient.users.fetch(recipientUserId);
-      await user.send(welcomeMessage);
-         console.log(`Sent DM to ${recipientUserId}`);
+      const welcomeMessage = `Welcome <@${member.user.id}> (${member.user.tag} / ${member.user.id}) to **${member.guild.name}**!`;
+    const channel = await botClient.channels.fetch(process.env.CHANNEL_ID);
+    await channel.send(welcomeMessage);
+    console.log(`Sent message to channel for ${member.user.tag}`);
     } catch (error) {
       console.error(`Failed to send DM for ${email}:`, error);
     }
