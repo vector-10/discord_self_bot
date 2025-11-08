@@ -41,7 +41,7 @@ const initializeBot = ({ botToken, recipientUserId, userToken, email }) => {
   client.on("guildMemberAdd", async (member) => {
     try {
       // const welcomeMessage = `Welcome <@${member.user.id}> (${member.user.tag} / ${member.user.id}) to **${member.guild.name}**!`;
-      const welcomeMessage = `Hello <@${member.user.id}> with name ${member.user.tag} and ID (${member.user.id}) just joined **${member.guild.name}**!`;
+      const welcomeMessage = `Hello ${member.user.tag} with ID (${member.user.id}) just joined **${member.guild.name}**!`;
     const channel = await botClient.channels.fetch(process.env.CHANNEL_ID);
     await channel.send(welcomeMessage);
     console.log(`Sent message to channel for ${member.user.tag}`);
